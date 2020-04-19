@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS TASK 3</title>
+</head>
+<body>
+	<script>
+		function output (number) {
+			let num = [];
+			for (i = 1;  i <= number; i++) {
+
+				if (i % 2 === 0 && i % 3 === 0 && i % 5 === 0) {
+					num.push("yu-gi-oh");
+				}else if (i % 2 === 0 && i % 3 === 0) {
+					num.push("yu-gi");
+				} else if (i % 2 === 0 && i % 5 === 0) {
+					num.push("yu-oh");
+				} else if (i % 3 === 0 && i % 5 === 0) {
+					num.push("gi-oh");
+				} else if (i % 2=== 0) {
+					num.push("yu");
+				} else if (i % 3=== 0) {
+					num.push("gi");
+				}else if (i % 5=== 0) {
+					num.push("oh");
+				} else {
+					num.push(i);
+				}
+			}
+			console.log(num);
+			return num;
+		}
+		output(100)
+		output(27)
+	</script>
+
+</body>
+</html>
